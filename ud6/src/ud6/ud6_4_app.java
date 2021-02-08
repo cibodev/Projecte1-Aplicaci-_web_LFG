@@ -6,9 +6,16 @@ public class ud6_4_app {
 		// TODO Auto-generated method stub
 		
 		String texto=JOptionPane.showInputDialog("Número factorial");
-			int numero=Integer.parseInt(texto);
-			System.out.println("El número factorial "+numero+" es"+ajajaj));
+			int factorial=Integer.parseInt(texto);
+			System.out.println("El número factorial es");
 			}
-	public static int (int numero) {
-		return 
-	}
+	
+			public static int numero (int factorial) {
+				}
+			}
+	
+		
+}
+	
+	
+	
