@@ -6,7 +6,9 @@ public class ud7_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		String texto = JOptionPane.showInputDialog("Introduce articulo");
+		String texto1 = JOptionPane.showInputDialog("Número de articulos");
+		
 		// Creamos la base de datos
 		HashMap<String, Integer> articulosyPrecio = new HashMap<String, Integer>();
 
@@ -22,7 +24,7 @@ public class ud7_3 {
 		articulosyPrecio.put("Estuche", 5);
 		articulosyPrecio.put("Teclado pc", 22);
 
-		System.out.println(articulosyPrecio);	
+		System.out.println(articulosyPrecio.toString());	
 	
 	}
 }
