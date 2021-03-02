@@ -8,13 +8,13 @@ public class ud6_3_app {
 		String texto=JOptionPane.showInputDialog("Introduce un número");
 			int numero=Integer.parseInt(texto);
 						
-			if (numero<=1) {
-				System.out.println("El número "+numero+" no es primo");
-			}else { 
+			if (numPrimo(numero)) {
 				System.out.println("El número "+numero+" es primo");
+			}else { 
+				System.out.println("El número "+numero+" no es primo");
 			}
 		}
-			public static boolean esnumeroPrimo (int numero) {
+			public static boolean numPrimo (int numero) {
 				if (numero<=1){
 					return false;
 				}else {

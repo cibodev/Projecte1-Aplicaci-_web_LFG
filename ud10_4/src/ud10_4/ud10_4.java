@@ -54,8 +54,9 @@ public class ud10_4 {
 			System.out.println(Math.cbrt(num2));
 			System.out.println("Cálculo terminado");
 
-		} catch (Exception ex) {
-			System.out.println("Introduce un número valido");
+		} catch (InputMismatchException e) {
+			System.out.print("Solo se aceptan números");
+
 		}
 	}
 }
