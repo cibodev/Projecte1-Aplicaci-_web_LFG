@@ -1,62 +1,74 @@
-package ud10_4;
-
-import javax.swing.JOptionPane;
+package src.ud10_4;
 import java.util.InputMismatchException;
 
 public class ud10_4 {
 
-	int resultado;
+	
+	//import ejercicio4_4.*;
 
-	public int sumar(int num1, int num2) {
-		resultado = num1 + num2;
-		return resultado;
-	}
 
-	public int restar(int num1, int num2) {
-		resultado = num1 - num2;
-		return resultado;
+		public static void main(String[] args) {
+			
+			
+			public static int suma(int a,int b) {
+				return a+b;
+			}
+			
+			public static int resta(int a,int b) {
+				return a-b;
+			}
+			
+			public static int multi(int a,int b) {
+				return a*b;
+			}
+			
+			public static int div(int a,int b) {
+				return a/b;
+			}
+			
+			public static int potencia(int a,int b) {
+				return (int) Math.pow(a, b);
+			}
+			
+			public static int raiz2(int a) {
+				return (int) Math.sqrt(a);
+			}
+			
+			public static int raiz3(int a) {
+				return (int) Math.cbrt(a);
+			}
+			
+			try {
+String texto = JOptionPane.showInputDialog("Introduce el primer número: ");
+System.out.println("Valor del primer número: "+texto);
+				int a = texto;
+				
+				String texto1 = JOptionPane.showInputDialog("Introduce el segundo número: ");
+				System.out.println("Valor del segundo número: "+texto1);
+								int b = texto1;
+				System.out.println("Valor del segundo número: ");
+				int b = texto1;
+				
+				suma(a,b);
+				resta(a,b);
+				multi(a,b);
+				div(a,b);
+				potencia(a,b);
+				raiz2(a);
+				raiz3(a);
 
-	}
-
-	public int multiplicar(int num1, int num2) {
-		resultado = num1 * num2;
-		return resultado;
-
-	}
-
-	public int dividir(int num1, int num2) {
-		resultado = num1 / num2;
-		return resultado;
-
-	}
-
-	public static void main(String[] args) {
-		ud10_4 calculo = new ud10_4();
-		int num1, num2;
-
-		num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce el primer número: "));
-		num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce el segundo número: "));
-
-		try {
-			System.out.println("La suma es: " + calculo.sumar(num1, num2));
-			System.out.println("La resta es: " + calculo.restar(num1, num2));
-			System.out.println("La multiplicación es: " + calculo.multiplicar(num1, num2));
-			System.out.println("La división es: " + calculo.dividir(num1, num2));
-			System.out.println("La potencia del número " + num1 + " elevado a: " + num2 + " es:");
-			System.out.println(Math.pow(num1, num2));
-			System.out.println("La raíz cuadrada del número " + num1 + " es:");
-			System.out.println(Math.sqrt(num1));
-			System.out.println("La raíz cuadrada del número " + num2 + " es:");
-			System.out.println(Math.sqrt(num2));
-			System.out.println("La raíz cubica del número " + num1 + " es:");
-			System.out.println(Math.cbrt(num1));
-			System.out.println("La raíz cubica del número " + num2 + " es:");
-			System.out.println(Math.cbrt(num2));
-			System.out.println("Cálculo terminado");
-
-		} catch (InputMismatchException e) {
-			System.out.print("Solo se aceptan números");
+				
+				
+			}catch(InputMismatchException e){
+				System.out.print("Solo acepta numeros!");
+			}catch(ArithmeticException e) {
+				System.out.print("No se puede dividir entre 0");
+			};
 
 		}
+		
+		
+		
+
 	}
 }
