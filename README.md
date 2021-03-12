@@ -22,7 +22,7 @@ https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 
 | Herramientas | Dependencias | 
 | --- | --- | 
-| MySQL Workbench 8.0 | Spring Web | 
+| MySQL 8.0 | Spring Web | 
 | MySQL Workbench 8.0 | Spring Boot Dev Tools | 
 |  | Spring Data JPA | 
 |  |  | 
