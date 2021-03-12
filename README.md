@@ -25,7 +25,7 @@ https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 | MySQL Workbench 8.0 | Spring Web | 
 | MySQL Workbench 8.0 | Spring Boot Dev Tools | 
 |  | Spring Data JPA | 
-|  | Spring Web | 
+|  |  | 
 
 ###  4. Vista preliminar.
 ![banerGit]("link a poner")
