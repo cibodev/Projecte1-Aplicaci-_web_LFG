@@ -35,6 +35,10 @@ public class Party {
 	}
 
 
+	public Party() {
+	}
+
+	//Getters and Setters
 	public int getId() {
 		return id;
 	}

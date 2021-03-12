@@ -22,6 +22,7 @@ public class Message {
 	@JoinColumn(name = "id_party")
 	Usuario id_party;
 
+	//Constructor
 	public Message(Usuario from, String message, String date, Usuario id_party) {
 		super();
 		this.from = from;
@@ -30,6 +31,11 @@ public class Message {
 		this.id_party = id_party;
 	}
 
+	public Message() {
+	}
+
+	
+	//Getters and Setters
 	public Usuario getFrom() {
 		return from;
 	}

@@ -29,6 +29,9 @@ public class Friendship {
 		this.id_usuario2 = id_usuario2;
 	}
 
+	public Friendship() {
+	}
+
 	//Getters and Setters
 	public int getId() {
 		return id;

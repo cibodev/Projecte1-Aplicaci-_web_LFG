@@ -38,6 +38,9 @@ public class Game {
 		this.party = party;
 	}
 
+	public Game() {
+	}
+
 	//Getters and Setters
 	public int getId() {
 		return id;
