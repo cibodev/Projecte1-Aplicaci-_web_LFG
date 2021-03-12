@@ -18,14 +18,14 @@ Repositorio del proyecto:
 ```
 https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 ```
-###   3. Lista de herramientas para poder ejecutarlo:
-```
-MySQL Server 8.0
-MySQL Workbench 8.0
-Depe
-Spring Web
-Spring Boot Dev Tools
-Spring Data JPA
-```
+###   3. Herramientas y dependencias:
+
+| Herramientas | Dependencias | 
+| --- | --- | 
+| MySQL Workbench 8.0 | Spring Web | 
+| MySQL Workbench 8.0 | Spring Boot Dev Tools | 
+|  | Spring Data JPA | 
+|  | Spring Web | 
+
 ###  4. Vista preliminar.
 ![banerGit]("link a poner")
