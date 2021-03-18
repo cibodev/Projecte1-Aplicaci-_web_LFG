@@ -5,7 +5,7 @@
 | Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
 | --- | :---:  | :---:  | :---:  | :---: | :---:  |
 | David Lascorz | Dev 1 | FullStack Developer | 12/03/2021 | LFG  | 1.0  |
-| Christin Rivas | Dev 2 | FullStack Developer | 12/03/2021 | LFG  | 1.0  | 
+| Christian Rivas | Dev 2 | FullStack Developer | 12/03/2021 | LFG  | 1.0  | 
 | Emma Pareja | Dev 3 | FullStack Developer| 12/03/2021 | LFG  | 1.0  |
 
 ### 1. Descripción
