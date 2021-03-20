@@ -25,6 +25,7 @@ public class MessageController {
 	@Autowired
 	MessageServiceImpl messageServiceImpl;
 
+	// End-points //
 	@GetMapping("/messages")
 	public List<Message> listarMessage() {
 		return messageServiceImpl.listarMessage();

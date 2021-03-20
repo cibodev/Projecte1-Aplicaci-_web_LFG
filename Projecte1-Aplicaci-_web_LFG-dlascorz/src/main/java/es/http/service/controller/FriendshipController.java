@@ -25,6 +25,7 @@ public class FriendshipController {
 	@Autowired
 	FriendshipServiceImpl friendshipServiceImpl;
 
+	// End-points //
 	@GetMapping("/friendships")
 	public List<Friendship> listarFriendship() {
 		return friendshipServiceImpl.listarFriendship();
@@ -51,11 +52,13 @@ public class FriendshipController {
 	@PutMapping("/friendships/{id}")
 	public Friendship actualizarFriendship(@PathVariable(name = "id") String id, @RequestBody Friendship Friendship) {
 
-		Friendship Friendship_seleccionado = new Friendship();
-		Friendship Friendship_actualizado = new Friendship();
+		// Creación de 2 friendships //
+		Friendship Friendship_seleccionado = new Friendship(); // Friendship seleccionado //
+		Friendship Friendship_actualizado = new Friendship(); // Friendship actualizado //
 
 		Friendship_seleccionado = friendshipServiceImpl.friendshipXID(id);
-
+		
+		// La friendship seleccionada copia los datos del usuario //
 		Friendship_seleccionado.setId_usuario2(Friendship.getId_usuario2());
 		Friendship_seleccionado.setId_usuario(Friendship.getId_usuario());
 

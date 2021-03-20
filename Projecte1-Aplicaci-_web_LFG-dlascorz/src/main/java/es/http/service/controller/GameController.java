@@ -25,6 +25,7 @@ public class GameController {
 	@Autowired
 	GameServiceImpl gameServiceImpl;
 
+	// End-points //
 	@GetMapping("/games")
 	public List<Game> listarGame() {
 		return gameServiceImpl.listarGame();
@@ -56,6 +57,7 @@ public class GameController {
 
 		Game_seleccionado = gameServiceImpl.gameXID(id);
 
+		// El game seleccionado copia los datos (nombre e imagen) //
 		Game_seleccionado.setNombre(Game.getNombre());
 		Game_seleccionado.setImagen(Game.getImagen());
 

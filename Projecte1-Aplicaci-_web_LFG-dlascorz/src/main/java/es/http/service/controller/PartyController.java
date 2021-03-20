@@ -25,6 +25,7 @@ public class PartyController {
 	@Autowired
 	PartyServiceImpl partyServiceImpl;
 
+	// End-points //
 	@GetMapping("/partys")
 	public List<Party> listarParty() {
 		return partyServiceImpl.listarParty();
@@ -51,8 +52,8 @@ public class PartyController {
 	@PutMapping("/partys/{id}")
 	public Party actualizarParty(@PathVariable(name = "id") String id, @RequestBody Party Party) {
 
-		Party Party_seleccionado = new Party();
-		Party Party_actualizado = new Party();
+		Party Party_seleccionado = new Party(); // Party seleciionada //
+		Party Party_actualizado = new Party(); // Party actualizada //
 
 		Party_seleccionado = partyServiceImpl.partyXID(id);
 
