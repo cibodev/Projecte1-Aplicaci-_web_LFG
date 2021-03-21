@@ -1,6 +1,7 @@
 package proyecto;
 
 public class friendships {
+	private int id;
 	private int id_usuario;
 	private int id_usuario2;
 	
