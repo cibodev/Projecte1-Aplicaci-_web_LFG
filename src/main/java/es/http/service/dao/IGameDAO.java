@@ -5,5 +5,5 @@ import es.http.service.dto.Game;
 
 public interface IGameDAO extends JpaRepository<Game, Integer> {
 
-	Game findByGame(String nombre);
+	//Game findByGame(String nombre);
 }

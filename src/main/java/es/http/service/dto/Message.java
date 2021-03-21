@@ -1,41 +1,58 @@
 package es.http.service.dto;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="message")
 public class Message {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+
 	@ManyToOne
 	@JoinColumn(name = "from")
 	Usuario from;
-	
+
 	@Column(name = "message")
 	private String message;
 
 	@Column(name = "date")
 	private String date;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "id_party")
-	Usuario id_party;
+	Party party;
 
-	//Constructor
-	public Message(Usuario from, String message, String date, Usuario id_party) {
-		super();
-		this.from = from;
-		this.message = message;
-		this.date = date;
-		this.id_party = id_party;
-	}
-
+	// Constructor
 	public Message() {
 	}
 
-	
-	//Getters and Setters
+	public Message(int id, Usuario from, String message, String date, Party party) {
+		super();
+		this.id = id;
+		this.from = from;
+		this.message = message;
+		this.date = date;
+		this.party = party;
+	}
+
+	// Getters and Setters
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public Usuario getFrom() {
 		return from;
 	}
@@ -60,15 +77,12 @@ public class Message {
 		this.date = date;
 	}
 
-	public Usuario getId_party() {
-		return id_party;
+	public Party getParty() {
+		return party;
 	}
 
-	public void setId_party(Usuario id_party) {
-		this.id_party = id_party;
+	public void setParty(Party party) {
+		this.party = party;
 	}
-	
-	
-	
-	
+
 }

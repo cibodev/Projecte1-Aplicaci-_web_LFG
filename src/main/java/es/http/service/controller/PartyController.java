@@ -3,7 +3,6 @@ package es.http.service.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,10 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.http.service.dao.IPartyDAO;
 import es.http.service.dto.Party;
 import es.http.service.service.PartyServiceImpl;
 
@@ -27,7 +26,7 @@ public class PartyController {
 
 	@GetMapping("/partys")
 	public List<Party> listarParty() {
-		return partyServiceImpl.listarParty();
+		return partyServiceImpl.listarPartys();
 	}
 
 	@PostMapping("/partys")
@@ -37,7 +36,7 @@ public class PartyController {
 	}
 
 	@GetMapping("/partys/{id}")
-	public Party PartyXID(@PathVariable(name = "id") String id) {
+	public Party PartyXID(@PathVariable(name = "id") int id) {
 
 		Party Party_xid = new Party();
 
@@ -49,7 +48,7 @@ public class PartyController {
 	}
 
 	@PutMapping("/partys/{id}")
-	public Party actualizarParty(@PathVariable(name = "id") String id, @RequestBody Party Party) {
+	public Party actualizarParty(@PathVariable(name = "id") int id, @RequestBody Party Party) {
 
 		Party Party_seleccionado = new Party();
 		Party Party_actualizado = new Party();
@@ -68,7 +67,7 @@ public class PartyController {
 	}
 
 	@DeleteMapping("/partys/{id}")
-	public void eleiminarParty(@PathVariable(name = "id") String id) {
+	public void eleiminarParty(@PathVariable(name = "id") int id) {
 		partyServiceImpl.eliminarParty(id);
 	}
 }

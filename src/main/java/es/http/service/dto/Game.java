@@ -2,16 +2,22 @@ package es.http.service.dto;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+@Entity
+@Table(name="game")
 public class Game {
 
 	@Id
@@ -24,7 +30,7 @@ public class Game {
 	@Column(name = "imagen")
 	private String imagen;
 	
-	@OneToMany
+	@OneToMany(orphanRemoval=true)
 	@JoinColumn(name = "id")
 	private List<Party> party;
 

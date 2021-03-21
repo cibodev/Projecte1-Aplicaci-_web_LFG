@@ -5,5 +5,5 @@ import es.http.service.dto.Friendship;
 
 public interface IFriendshipDAO extends JpaRepository<Friendship, Integer> {
 
-	Friendship findByUsername(String username);
+
 }

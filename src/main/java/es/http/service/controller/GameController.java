@@ -3,7 +3,6 @@ package es.http.service.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,10 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.http.service.dao.IGameDAO;
 import es.http.service.dto.Game;
 import es.http.service.service.GameServiceImpl;
 
@@ -27,7 +26,7 @@ public class GameController {
 
 	@GetMapping("/games")
 	public List<Game> listarGame() {
-		return gameServiceImpl.listarGame();
+		return gameServiceImpl.listarGames();
 	}
 
 	@PostMapping("/games")
@@ -37,7 +36,7 @@ public class GameController {
 	}
 
 	@GetMapping("/games/{id}")
-	public Game GameXID(@PathVariable(name = "id") String id) {
+	public Game GameXID(@PathVariable(name = "id") int id) {
 
 		Game Game_xid = new Game();
 
@@ -49,7 +48,7 @@ public class GameController {
 	}
 
 	@PutMapping("/games/{id}")
-	public Game actualizarGame(@PathVariable(name = "id") String id, @RequestBody Game Game) {
+	public Game actualizarGame(@PathVariable(name = "id") int id, @RequestBody Game Game) {
 
 		Game Game_seleccionado = new Game();
 		Game Game_actualizado = new Game();
@@ -67,7 +66,7 @@ public class GameController {
 	}
 
 	@DeleteMapping("/games/{id}")
-	public void eleiminarGame(@PathVariable(name = "id") String id) {
+	public void eleiminarGame(@PathVariable(name = "id") int id) {
 		gameServiceImpl.eliminarGame(id);
 	}
 }

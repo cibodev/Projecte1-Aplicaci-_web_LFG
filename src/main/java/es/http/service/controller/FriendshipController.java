@@ -1,9 +1,7 @@
 package es.http.service.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.http.service.dao.IFriendshipDAO;
 import es.http.service.dto.Friendship;
 import es.http.service.service.FriendshipServiceImpl;
 
@@ -27,7 +24,7 @@ public class FriendshipController {
 
 	@GetMapping("/friendships")
 	public List<Friendship> listarFriendship() {
-		return friendshipServiceImpl.listarFriendship();
+		return friendshipServiceImpl.listarFriendships();
 	}
 
 	@PostMapping("/friendships")
@@ -37,7 +34,7 @@ public class FriendshipController {
 	}
 
 	@GetMapping("/friendships/{id}")
-	public Friendship FriendshipXID(@PathVariable(name = "id") String id) {
+	public Friendship FriendshipXID(@PathVariable(name = "id") int id) {
 
 		Friendship Friendship_xid = new Friendship();
 
@@ -49,7 +46,7 @@ public class FriendshipController {
 	}
 
 	@PutMapping("/friendships/{id}")
-	public Friendship actualizarFriendship(@PathVariable(name = "id") String id, @RequestBody Friendship Friendship) {
+	public Friendship actualizarFriendship(@PathVariable(name = "id") int id, @RequestBody Friendship Friendship) {
 
 		Friendship Friendship_seleccionado = new Friendship();
 		Friendship Friendship_actualizado = new Friendship();
@@ -67,7 +64,7 @@ public class FriendshipController {
 	}
 
 	@DeleteMapping("/friendships/{id}")
-	public void eleiminarFriendship(@PathVariable(name = "id") String id) {
+	public void eleiminarFriendship(@PathVariable(name = "id") int id) {
 		friendshipServiceImpl.eliminarFriendship(id);
 	}
 }
