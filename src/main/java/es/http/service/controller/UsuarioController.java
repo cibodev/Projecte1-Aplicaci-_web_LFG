@@ -3,6 +3,7 @@ package es.http.service.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -60,13 +61,14 @@ public class UsuarioController {
 		return Usuario_xid;
 	}
 
-	@PostMapping("/users")
+	@PostMapping("/signup")
 	public void saveUsuario(@RequestBody Usuario user) {
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 		iUsuarioDAO.save(user);
 	}
 
-	@PutMapping("/users/{id}")
+
+	@PutMapping("/users/update/{id}")
 	public Usuario actualizarUsuario(@PathVariable(name = "id") int id, @RequestBody Usuario user) {
 
 		Usuario Usuario_seleccionado = new Usuario();
@@ -86,7 +88,7 @@ public class UsuarioController {
 		return Usuario_actualizado;
 	}
 
-	@DeleteMapping("/users/{id}")
+	@DeleteMapping("/users/delete/{id}")
 	public void eleiminarUsuario(@PathVariable(name = "id") int id) {
 		usuarioDetailsServiceImpl.eliminarUsuario(id);
 	}

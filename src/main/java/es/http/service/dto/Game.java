@@ -30,7 +30,7 @@ public class Game {
 	@Column(name = "imagen")
 	private String imagen;
 	
-	@OneToMany(orphanRemoval=true)
+	@OneToMany
 	@JoinColumn(name = "id")
 	private List<Party> party;
 

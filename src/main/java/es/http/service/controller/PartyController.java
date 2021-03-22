@@ -61,8 +61,6 @@ public class PartyController {
 
 		Party_actualizado = partyServiceImpl.actualizarParty(Party_seleccionado);
 
-		// System.out.println("El Party actualizado es: "+ Party_actualizado);
-
 		return Party_actualizado;
 	}
 
