@@ -1,0 +1,74 @@
+	#Se lanza una petición de login
+	curl -i -H "Content-Type: application/json" -X POST -d '{ "username": "admin", "password": "password"}' http://localhost:8181/login
+	
+	# Recuperamos los usuarios dados de alta
+	curl -H "Authorization: Bearer xxx.yyy.zzz" http://localhost:8181/users/
+	
+	# Damos de alta un nuevo usuario
+	curl -i -H 'Content-Type: application/json' -H 'Authorization: Bearer xxx.yyy.zzz' -X POST -d '{ "username": "jose", "password": "1234"}' http://localhost:8181/users/
+	
+	
+	#Lista de usarios
+	GET http://localhost:8181/users
+	
+	#Buscar por usuarios
+	GET http://localhost:8181/users/{id}
+	
+	#Editar usuario
+	PUT http://localhost:8181/users/{id} { "nombre": "Grand Theft Auto V", "Imagen": "imagen.jpg"}
+	
+	#Alta usuario
+	POST http://localhost:8181/users { "nombre": "Grand Theft Auto V", "Imagen": "imagen.jpg"}
+	
+	
+	
+	#Lista de games
+	GET http://localhost:8181/games
+	
+	#Buscar por game
+	GET http://localhost:8181/games/{id}
+	
+	#Editar game
+	PUT http://localhost:8181/games/{id} { "nombre": "Grand Theft Auto V", "Imagen": "imagen.jpg"}
+	
+	#Alta game
+	POST http://localhost:8181/games { "nombre": "Grand Theft Auto V", "Imagen": "imagen.jpg"}
+	
+	
+	#Lista de partys
+	GET http://localhost:8181/partys
+	
+	#Buscar por party
+	GET http://localhost:8181/partys/{id}
+	
+	#Editar party
+	PUT http://localhost:8181/partys/{id} { "nombre": "usuario2536", "id_usuario": {"id": 4}, "id_game": {"id": 2} }
+	
+	#Alta party
+	POST http://localhost:8181/partys { "nombre": "usuario2536", "id_usuario": {"id": 4}, "id_game": {"id": 2} }
+	
+	
+	#Lista de messages
+	GET http://localhost:8181/messages
+	
+	#Buscar por message
+	GET http://localhost:8181/messages/{id}
+	
+	#Editar message
+	PUT http://localhost:8181/messages/{id} {"from": {"id": 1}, "message": "Hola, que tal?", "date": "2021-03-09 00:00:00", "party": {"id": 1}}
+	
+	#Alta message
+	POST http://localhost:8181/messages {"from": {"id": 1}, "message": "Hola, que tal?", "date": "2021-03-09 00:00:00", "party": {"id": 1}}
+	
+	
+	#Lista de friendships
+	GET http://localhost:8181/friendships
+	
+	#Buscar por friendship
+	GET http://localhost:8181/friendships/{id}
+	
+	#Editar friendship
+	PUT http://localhost:8181/friendships/{id} {"id_usuario": {"id": 1}, "id_usuario2": {"id": 2}}
+	
+	#Alta friendship
+	POST http://localhost:8181/friendships {"id_usuario": {"id": 1}, "id_usuario2": {"id": 2}}
