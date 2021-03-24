@@ -42,9 +42,12 @@ public class GameController {
 
 		Game_xid = gameServiceImpl.gameXID(id);
 
-		// System.out.println("Game XID: "+Game_xid);
-
 		return Game_xid;
+	}
+	
+	@GetMapping("/games/nombre/{nombre}")
+	public List<Game> GameXNombre(@PathVariable(name = "nombre") String nombre) {
+		return gameServiceImpl.buscarGame(nombre);
 	}
 
 	@PutMapping("/games/{id}")

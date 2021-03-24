@@ -17,6 +17,8 @@ public interface IGameService {
 		public Game actualizarGame(Game game); //Actualiza datos del game UPDATE
 		
 		public void eliminarGame(int id);// Elimina el game DELETE
+		
+		public List<Game> buscarGame(String nombre);
 	
 }
 

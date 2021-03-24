@@ -40,4 +40,9 @@ public class GameServiceImpl implements IGameService {
 		iGameDAO.deleteById(id);
 	}
 
+	@Override
+	public List<Game> buscarGame(String nombre) {
+		return iGameDAO.findByNombreContaining(nombre);
+	}
+
 }
