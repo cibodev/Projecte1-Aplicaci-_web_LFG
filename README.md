@@ -3,7 +3,7 @@
 # GAMECHAT
 
 
-## Equipo de desarrollo: :computer:
+## Equipo de desarrollo: :mortar_board:
 | Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
 | --- | :---:  | :---:  | :---:  | :---: | :---:  |
 | David Lascorz | Dev 1 | FullStack Developer | 12/03/2021 | LFG  | 1.0  |
@@ -29,7 +29,7 @@ Repositorio del proyecto:
 https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 ```
 
-## Herramientas, tecnologías y dependencias:
+## Herramientas, tecnologías y dependencias: :computer:
 | Herramientas | Tecnologías| Dependencias 
 | --- | --- | ---
 | Spring Boot Deep Tools |Java8 |Spring Web | 
