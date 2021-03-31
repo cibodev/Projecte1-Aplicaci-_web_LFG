@@ -45,4 +45,7 @@ https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 
 ## Capturas del proyecto ``Gamechat``:
 ![banerGit](https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG/blob/master/imagenes/register.png)
+![banerGit](https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG/blob/master/imagenes/1.png)
+![banerGit](https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG/blob/master/imagenes/2.png)
+![banerGit](https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG/blob/master/imagenes/3.png)
 
