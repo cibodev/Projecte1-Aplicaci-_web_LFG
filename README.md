@@ -12,7 +12,7 @@
 
 
 
-## Descripción del proyecto:
+## Descripción del proyecto: :space_invader:
 
 Gamechat es una aplicación web LFG, que permite a los empleados de T-Systems contactar con otros compañeros/as con la finalidad de formar grupos de chats para jugar a un videojuego, con el objetivo de poder compartir un rato de ocio y poder conocerse mejor.
 
