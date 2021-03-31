@@ -1,105 +1,47 @@
-# Spring Boot JWT Authentication example with Spring Security & Spring Data JPA
+![enter image description here](https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80)
 
-## User Registration, User Login and Authorization process.
-The diagram shows flow of how we implement User Registration, User Login and Authorization process.
+# GAMECHAT
 
-![spring-boot-jwt-authentication-spring-security-flow](spring-boot-jwt-authentication-spring-security-flow.png)
 
-## Spring Boot Server Architecture with Spring Security
-You can have an overview of our Spring Boot Server with the diagram below:
+## Equipo de desarrollo:
+| Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
+| --- | :---:  | :---:  | :---:  | :---: | :---:  |
+| David Lascorz | Dev 1 | FullStack Developer | 12/03/2021 | LFG  | 1.0  |
+| Christian Rivas | Dev 2 | FullStack Developer | 12/03/2021 | LFG  | 1.0  | 
+| Emma Pareja | Dev 3 | FullStack Developer| 12/03/2021 | LFG  | 1.0  |
 
-![spring-boot-jwt-authentication-spring-security-architecture](spring-boot-jwt-authentication-spring-security-architecture.png)
 
-For more detail, please visit:
-> [Secure Spring Boot App with Spring Security & JWT Authentication](https://bezkoder.com/spring-boot-jwt-authentication/)
 
-> [For MongoDB](https://bezkoder.com/spring-boot-jwt-auth-mongodb/)
+## Descripción del proyecto:
 
-## Fullstack Authentication
+Gamechat es una aplicación web LFG, que permite a los empleados de T-Systems contactar con otros compañeros/as con la finalidad de formar grupos de chats para jugar a un videojuego, con el objetivo de poder compartir un rato de ocio y poder conocerse mejor.
 
-> [Spring Boot + Vue.js JWT Authentication](https://bezkoder.com/spring-boot-vue-js-authentication-jwt-spring-security/)
+## Objetivos:
 
-> [Spring Boot + Angular 8 JWT Authentication](https://bezkoder.com/angular-spring-boot-jwt-auth/)
+ - Comunicación entre los compañeros del trabajo.
+ - Facilitar el contacto con otras personas a través del chat.
+ - Permite desconectar a las personas del día a día y poder conectar con un mundo virtual a través del chat de la aplicación.
 
-> [Spring Boot + Angular 10 JWT Authentication](https://bezkoder.com/angular-10-spring-boot-jwt-auth/)
+## Link a una demo con el proyecto desplegado:
 
-> [Spring Boot + Angular 11 JWT Authentication](https://bezkoder.com/angular-11-spring-boot-jwt-auth/)
-
-> [Spring Boot + React JWT Authentication](https://bezkoder.com/spring-boot-react-jwt-auth/)
-
-## Fullstack CRUD App
-
-> [Vue.js + Spring Boot + MySQL/PostgreSQL example](https://bezkoder.com/spring-boot-vue-js-crud-example/)
-
-> [Angular + Spring Boot + MySQL example](https://bezkoder.com/angular-10-spring-boot-crud/)
-
-> [Angular + Spring Boot + PostgreSQL example](https://bezkoder.com/angular-10-spring-boot-postgresql/)
-
-> [React + Spring Boot + MySQL example](https://bezkoder.com/react-spring-boot-crud/)
-
-> [React + Spring Boot + PostgreSQL example](https://bezkoder.com/spring-boot-react-postgresql/)
-
-Run both Back-end & Front-end in one place:
-> [Integrate Angular with Spring Boot Rest API](https://bezkoder.com/integrate-angular-spring-boot/)
-
-> [Integrate React.js with Spring Boot Rest API](https://bezkoder.com/integrate-reactjs-spring-boot/)
-
-## Dependency
-– If you want to use PostgreSQL:
-```xml
-<dependency>
-  <groupId>org.postgresql</groupId>
-  <artifactId>postgresql</artifactId>
-  <scope>runtime</scope>
-</dependency>
+Repositorio del proyecto:
 ```
-– or MySQL:
-```xml
-<dependency>
-  <groupId>mysql</groupId>
-  <artifactId>mysql-connector-java</artifactId>
-  <scope>runtime</scope>
-</dependency>
-```
-## Configure Spring Datasource, JPA, App properties
-Open `src/main/resources/application.properties`
-- For PostgreSQL:
-```
-spring.datasource.url= jdbc:postgresql://localhost:5432/testdb
-spring.datasource.username= postgres
-spring.datasource.password= 123
-
-spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation= true
-spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
-
-# Hibernate ddl auto (create, create-drop, validate, update)
-spring.jpa.hibernate.ddl-auto= update
-
-# App Properties
-bezkoder.app.jwtSecret= bezKoderSecretKey
-bezkoder.app.jwtExpirationMs= 86400000
-```
-- For MySQL
-```
-spring.datasource.url= jdbc:mysql://localhost:3306/testdb?useSSL=false
-spring.datasource.username= root
-spring.datasource.password= 123456
-
-spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
-spring.jpa.hibernate.ddl-auto= update
-
-# App Properties
-bezkoder.app.jwtSecret= bezKoderSecretKey
-bezkoder.app.jwtExpirationMs= 86400000
-```
-## Run Spring Boot application
-```
-mvn spring-boot:run
+https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 ```
 
-## Run following SQL insert statements
-```
-INSERT INTO roles(name) VALUES('ROLE_USER');
-INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
-INSERT INTO roles(name) VALUES('ROLE_ADMIN');
-```
+## Herramientas, tecnologías y dependencias:
+| Herramientas | Tecnologías| Dependencias 
+| --- | --- | ---
+| Spring Boot Deep Tools |Java8 |Spring Web | 
+|  MySQL Workbench 8.0| Angular | Spring Boot Dev Tools
+| Postman| CSS| Spring Security
+|  Fedora|HTML  | MySQL driver
+| Día|BootStrap |Spring data JPA
+| |JavaScript | 
+| | TypeScript
+| | Ajax
+| |JQuery
+| |
+
+## Capturas del proyecto ``Gamechat``:
+
