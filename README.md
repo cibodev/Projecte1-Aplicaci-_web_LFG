@@ -44,4 +44,5 @@ https://github.com/cibodev/Projecte1-Aplicaci-_web_LFG
 | |
 
 ## Capturas del proyecto ``Gamechat``:
+![banerGit](https://github.com/team-6-Java/Biblioteca-CRUD_ER_MySQL/blob/main/1.png)
 
