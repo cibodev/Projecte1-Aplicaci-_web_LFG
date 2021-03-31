@@ -16,7 +16,7 @@
 
 Gamechat es una aplicación web LFG, que permite a los empleados de T-Systems contactar con otros compañeros/as con la finalidad de formar grupos de chats para jugar a un videojuego, con el objetivo de poder compartir un rato de ocio y poder conocerse mejor.
 
-## Objetivos:
+## Objetivos: :chart_with_upwards_trend:	📉
 
  - Comunicación entre los compañeros del trabajo.
  - Facilitar el contacto con otras personas a través del chat.
